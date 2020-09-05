@@ -1,7 +1,9 @@
 const api = {
-  key: "afaf9f8d48cff6cafd32e23220bcfdbf",
+  key: "8029645a832b92b90ee27ed30b62b361",
   base: "https://api.openweathermap.org/data/2.5/"
 }
+
+
 
 const searchbox = document.querySelector('.search-box');
 searchbox.addEventListener('keypress', setQuery);
@@ -35,6 +37,8 @@ function displayResults (weather) {
 
   let hilow = document.querySelector('.hi-low');
   hilow.innerText = `${Math.round(weather.main.temp_min)}°c / ${Math.round(weather.main.temp_max)}°c`;
+
+  return `${city} ${location} ${temp} ${weather}`;
 }
 
 function dateBuilder (d) {
@@ -48,3 +52,4 @@ function dateBuilder (d) {
 
   return `${day} ${date} ${month} ${year}`;
 }
+
