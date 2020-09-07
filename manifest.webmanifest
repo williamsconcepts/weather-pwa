@@ -3,7 +3,7 @@
     "short_name": "weather-pwa",
     "start_url": "https://williamsconcepts.github.io/weather-pwa/",
     "display": "standalone",
-    "background_color": "#fff",
+    "background_color": "#23abe2",
     "description": "A simply weather pwa app.",
     "icons": [{
       "src": "images/touch/boo.png",
